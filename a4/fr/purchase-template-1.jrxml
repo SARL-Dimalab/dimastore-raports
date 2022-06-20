@@ -188,7 +188,7 @@
 				<textElement>
 					<font size="16" isBold="true"/>
 				</textElement>
-				<text><![CDATA[From:]]></text>
+				<text><![CDATA[De:]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="415" y="20" width="60" height="15" uuid="d91c3200-2f16-4acd-8b91-9014d1006725">
@@ -239,7 +239,7 @@
 				<textElement>
 					<font size="16" isBold="true"/>
 				</textElement>
-				<text><![CDATA[To:]]></text>
+				<text><![CDATA[À:]]></text>
 			</staticText>
 			<textField>
 				<reportElement positionType="FixRelativeToBottom" x="475" y="35" width="80" height="15" uuid="9e83b26b-da13-4b60-a8df-8e766e8addc3">
@@ -255,7 +255,7 @@
 				<textElement textAlignment="Left" verticalAlignment="Middle">
 					<font isBold="true"/>
 				</textElement>
-				<text><![CDATA[Due Date:]]></text>
+				<text><![CDATA[Date d'échéance:]]></text>
 			</staticText>
 			<textField>
 				<reportElement x="415" y="0" width="140" height="20" uuid="f410acac-df31-4419-b277-6690e42d1120">
@@ -342,7 +342,7 @@
 								<textElement textAlignment="Center" verticalAlignment="Middle">
 									<font fontName="Arial" isBold="true"/>
 								</textElement>
-								<text><![CDATA[Quantity]]></text>
+								<text><![CDATA[Quantité]]></text>
 							</staticText>
 						</jr:tableHeader>
 						<jr:detailCell style="Table 1_TD" height="15">
@@ -365,7 +365,7 @@
 								<textElement textAlignment="Center" verticalAlignment="Middle">
 									<font fontName="Arial" isBold="true"/>
 								</textElement>
-								<text><![CDATA[Unit]]></text>
+								<text><![CDATA[Unité]]></text>
 							</staticText>
 						</jr:tableHeader>
 						<jr:detailCell style="Table 1_TD" height="15">
@@ -422,7 +422,7 @@
 								<textElement textAlignment="Center" verticalAlignment="Middle">
 									<font fontName="Arial" isBold="true"/>
 								</textElement>
-								<text><![CDATA[Disc]]></text>
+								<text><![CDATA[Remise]]></text>
 							</staticText>
 						</jr:tableHeader>
 						<jr:detailCell style="Table 1_TD" height="15">
@@ -619,7 +619,7 @@
 				<textElement textAlignment="Left" verticalAlignment="Middle">
 					<font isBold="true"/>
 				</textElement>
-				<text><![CDATA[Total Debt]]></text>
+				<text><![CDATA[Dette totale]]></text>
 			</staticText>
 			<textField>
 				<reportElement positionType="FixRelativeToBottom" x="411" y="31" width="144" height="15" uuid="3683d3ff-594a-45ad-aa35-1483b90d68a9">
@@ -651,7 +651,7 @@
 				<textElement textAlignment="Left" verticalAlignment="Middle">
 					<font isBold="true"/>
 				</textElement>
-				<text><![CDATA[Remaining]]></text>
+				<text><![CDATA[Restant]]></text>
 			</staticText>
 			<staticText>
 				<reportElement positionType="FixRelativeToBottom" x="323" y="1" width="88" height="15" uuid="6cd97e32-a914-45ca-aa0b-93419b90cf0c">
@@ -668,7 +668,7 @@
 				<textElement textAlignment="Left" verticalAlignment="Middle">
 					<font isBold="true"/>
 				</textElement>
-				<text><![CDATA[Paid]]></text>
+				<text><![CDATA[Payé]]></text>
 			</staticText>
 			<textField>
 				<reportElement positionType="FixRelativeToBottom" x="90" y="21" width="112" height="15" uuid="fc4e6a27-a02d-4829-b71f-d2d168212777">
@@ -689,7 +689,7 @@
 				<textElement textAlignment="Left" verticalAlignment="Middle">
 					<font isBold="true"/>
 				</textElement>
-				<text><![CDATA[Payment Method:]]></text>
+				<text><![CDATA[Mode de paiement:]]></text>
 			</staticText>
 			<staticText>
 				<reportElement positionType="FixRelativeToBottom" x="1" y="36" width="88" height="15" uuid="79634512-0dfd-403d-b518-7ef05c0fc0b6">
@@ -698,7 +698,7 @@
 				<textElement textAlignment="Left" verticalAlignment="Middle">
 					<font isBold="true"/>
 				</textElement>
-				<text><![CDATA[Due Date:]]></text>
+				<text><![CDATA[Date d'échéance:]]></text>
 			</staticText>
 		</band>
 	</lastPageFooter>
@@ -734,7 +734,7 @@
 								<textElement verticalAlignment="Middle">
 									<font isBold="true"/>
 								</textElement>
-								<text><![CDATA[AMOUNT DUE]]></text>
+								<text><![CDATA[MONTANT DÛ]]></text>
 							</staticText>
 						</jr:columnFooter>
 						<jr:detailCell style="Table 2_TD" height="20">
@@ -794,7 +794,7 @@
 				<reportElement x="0" y="0" width="281" height="19" uuid="03d5d497-37dd-4b90-9cb9-299afe0e07b0">
 					<property name="com.jaspersoft.studio.unit.y" value="px"/>
 				</reportElement>
-				<textFieldExpression><![CDATA["This bill stood on the total amount: "+$P{numberToWord}]]></textFieldExpression>
+				<textFieldExpression><![CDATA["Cette facture s'élevait au montant total :"+$P{numberToWord}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement positionType="FixRelativeToBottom" x="320" y="50" width="233" height="22" uuid="44ac09f9-c7ea-427b-8b6e-40e15b805424"/>
