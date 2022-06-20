@@ -203,7 +203,7 @@
 				<textElement>
 					<font size="16" isBold="true"/>
 				</textElement>
-				<text><![CDATA[To:]]></text>
+				<text><![CDATA[À:]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="434" y="82" width="38" height="15" uuid="0f86baff-6386-4f3f-b3fe-2388707babe8">
@@ -236,7 +236,7 @@
 				<textElement textAlignment="Left" markup="html">
 					<font isBold="true"/>
 				</textElement>
-				<text><![CDATA[Invoice #:]]></text>
+				<text><![CDATA[Facture #:]]></text>
 			</staticText>
 			<textField>
 				<reportElement x="472" y="82" width="81" height="15" uuid="19693559-c914-4905-aa40-34ebc42fec0b">
@@ -308,7 +308,7 @@
 				<textElement>
 					<font size="16" isBold="true"/>
 				</textElement>
-				<text><![CDATA[From:]]></text>
+				<text><![CDATA[De:]]></text>
 			</staticText>
 			<textField textAdjust="StretchHeight" isBlankWhenNull="true">
 				<reportElement style="Style1" x="287" y="195" width="266" height="15" uuid="44e5bc3a-b8d9-414a-9fbc-f46ad8d659d6"/>
@@ -338,8 +338,8 @@
 	</title>
 	<detail>
 		<band height="60" splitType="Stretch">
-			<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.FreeLayout"/>
 			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.spreadsheet.SpreadsheetLayout"/>
 			<componentElement>
 				<reportElement style="Title" stretchType="ContainerBottom" isPrintRepeatedValues="false" x="0" y="16" width="555" height="35" uuid="405d2541-26a7-46e0-be5e-1068d4bdf73a">
 					<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.HorizontalRowLayout"/>
@@ -410,7 +410,7 @@
 								<textElement textAlignment="Center" verticalAlignment="Middle">
 									<font fontName="Arial" isBold="true"/>
 								</textElement>
-								<text><![CDATA[Quantity]]></text>
+								<text><![CDATA[Quantité]]></text>
 							</staticText>
 						</jr:tableHeader>
 						<jr:detailCell style="Table 1_TD" height="15">
@@ -433,7 +433,7 @@
 								<textElement textAlignment="Center" verticalAlignment="Middle">
 									<font fontName="Arial" isBold="true"/>
 								</textElement>
-								<text><![CDATA[Unit]]></text>
+								<text><![CDATA[Unité]]></text>
 							</staticText>
 						</jr:tableHeader>
 						<jr:detailCell style="Table 1_TD" height="15">
@@ -490,7 +490,7 @@
 								<textElement textAlignment="Center" verticalAlignment="Middle">
 									<font fontName="Arial" isBold="true"/>
 								</textElement>
-								<text><![CDATA[Disc]]></text>
+								<text><![CDATA[Remise]]></text>
 							</staticText>
 						</jr:tableHeader>
 						<jr:detailCell style="Table 1_TD" height="15">
@@ -608,8 +608,8 @@
 	</pageFooter>
 	<lastPageFooter>
 		<band height="90">
-			<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.spreadsheet.SpreadsheetLayout"/>
 			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.spreadsheet.SpreadsheetLayout"/>
 			<textField textAdjust="StretchHeight" isBlankWhenNull="true">
 				<reportElement positionType="FixRelativeToBottom" stretchType="ContainerHeight" x="0" y="0" width="281" height="20" uuid="100010d4-d04b-41d6-9e19-2bc5d50df641"/>
 				<textFieldExpression><![CDATA[$P{note}]]></textFieldExpression>
@@ -687,7 +687,7 @@
 				<textElement textAlignment="Left" verticalAlignment="Middle">
 					<font isBold="true"/>
 				</textElement>
-				<text><![CDATA[Total Debt]]></text>
+				<text><![CDATA[Dette totale]]></text>
 			</staticText>
 			<textField>
 				<reportElement positionType="FixRelativeToBottom" x="411" y="31" width="144" height="15" uuid="3683d3ff-594a-45ad-aa35-1483b90d68a9">
@@ -719,7 +719,7 @@
 				<textElement textAlignment="Left" verticalAlignment="Middle">
 					<font isBold="true"/>
 				</textElement>
-				<text><![CDATA[Remaining]]></text>
+				<text><![CDATA[Restant]]></text>
 			</staticText>
 			<staticText>
 				<reportElement positionType="FixRelativeToBottom" x="323" y="1" width="88" height="15" uuid="6cd97e32-a914-45ca-aa0b-93419b90cf0c">
@@ -736,7 +736,7 @@
 				<textElement textAlignment="Left" verticalAlignment="Middle">
 					<font isBold="true"/>
 				</textElement>
-				<text><![CDATA[Paid]]></text>
+				<text><![CDATA[Payé]]></text>
 			</staticText>
 			<textField>
 				<reportElement positionType="FixRelativeToBottom" x="90" y="21" width="112" height="15" uuid="fc4e6a27-a02d-4829-b71f-d2d168212777">
@@ -757,7 +757,7 @@
 				<textElement textAlignment="Left" verticalAlignment="Middle">
 					<font isBold="true"/>
 				</textElement>
-				<text><![CDATA[Payment Method:]]></text>
+				<text><![CDATA[Mode de paiement:]]></text>
 			</staticText>
 			<staticText>
 				<reportElement positionType="FixRelativeToBottom" x="1" y="36" width="88" height="15" uuid="79634512-0dfd-403d-b518-7ef05c0fc0b6">
@@ -766,7 +766,7 @@
 				<textElement textAlignment="Left" verticalAlignment="Middle">
 					<font isBold="true"/>
 				</textElement>
-				<text><![CDATA[Due Date:]]></text>
+				<text><![CDATA[Date d'échéance:]]></text>
 			</staticText>
 		</band>
 	</lastPageFooter>
@@ -802,7 +802,7 @@
 								<textElement verticalAlignment="Middle">
 									<font isBold="true"/>
 								</textElement>
-								<text><![CDATA[AMOUNT DUE]]></text>
+								<text><![CDATA[MONTANT DÛ]]></text>
 							</staticText>
 						</jr:columnFooter>
 						<jr:detailCell style="Table 2_TD" height="20">
@@ -862,7 +862,7 @@
 				<reportElement x="0" y="0" width="281" height="19" uuid="03d5d497-37dd-4b90-9cb9-299afe0e07b0">
 					<property name="com.jaspersoft.studio.unit.y" value="px"/>
 				</reportElement>
-				<textFieldExpression><![CDATA["This bill stood on the total amount: "+$P{numberToWord}]]></textFieldExpression>
+				<textFieldExpression><![CDATA["Cette facture s'élevait au montant total : "+$P{numberToWord}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement positionType="FixRelativeToBottom" x="320" y="50" width="233" height="22" uuid="44ac09f9-c7ea-427b-8b6e-40e15b805424"/>
