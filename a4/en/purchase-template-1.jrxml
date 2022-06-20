@@ -270,10 +270,10 @@
 	</title>
 	<detail>
 		<band height="60" splitType="Stretch">
-			<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.FreeLayout"/>
 			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.spreadsheet.SpreadsheetLayout"/>
 			<componentElement>
-				<reportElement style="Title" stretchType="ContainerBottom" isPrintRepeatedValues="false" x="0" y="16" width="555" height="35" uuid="405d2541-26a7-46e0-be5e-1068d4bdf73a">
+				<reportElement style="Title" stretchType="ContainerBottom" isPrintRepeatedValues="false" x="0" y="0" width="555" height="60" uuid="405d2541-26a7-46e0-be5e-1068d4bdf73a">
 					<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.HorizontalRowLayout"/>
 					<property name="com.jaspersoft.studio.table.style.table_header" value="Table 1_TH"/>
 					<property name="com.jaspersoft.studio.table.style.column_header" value="Table 1_CH"/>
@@ -474,26 +474,6 @@
 					</jr:column>
 				</jr:table>
 			</componentElement>
-			<staticText>
-				<reportElement x="0" y="0" width="50" height="15" uuid="203e0bfc-4326-4efd-aa4c-c20cadd9231c">
-					<property name="com.jaspersoft.studio.unit.width" value="px"/>
-					<property name="com.jaspersoft.studio.unit.height" value="px"/>
-					<property name="com.jaspersoft.studio.unit.x" value="px"/>
-				</reportElement>
-				<textElement verticalAlignment="Middle">
-					<font isBold="true"/>
-				</textElement>
-				<text><![CDATA[TTL QTY:]]></text>
-			</staticText>
-			<textField>
-				<reportElement x="50" y="0" width="50" height="15" uuid="ba70f7b3-d3e8-4b05-8c72-d4c3b443cc44">
-					<property name="com.jaspersoft.studio.unit.width" value="px"/>
-					<property name="com.jaspersoft.studio.unit.height" value="px"/>
-					<property name="com.jaspersoft.studio.unit.x" value="px"/>
-				</reportElement>
-				<textElement verticalAlignment="Middle"/>
-				<textFieldExpression><![CDATA[$P{allQty}]]></textFieldExpression>
-			</textField>
 		</band>
 	</detail>
 	<pageFooter>
@@ -540,8 +520,8 @@
 	</pageFooter>
 	<lastPageFooter>
 		<band height="90">
-			<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.spreadsheet.SpreadsheetLayout"/>
 			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.spreadsheet.SpreadsheetLayout"/>
 			<textField textAdjust="StretchHeight" isBlankWhenNull="true">
 				<reportElement positionType="FixRelativeToBottom" stretchType="ContainerHeight" x="0" y="0" width="281" height="20" uuid="100010d4-d04b-41d6-9e19-2bc5d50df641"/>
 				<textFieldExpression><![CDATA[$P{note}]]></textFieldExpression>
@@ -670,42 +650,8 @@
 				</textElement>
 				<text><![CDATA[Paid]]></text>
 			</staticText>
-			<textField>
-				<reportElement positionType="FixRelativeToBottom" x="90" y="21" width="112" height="15" uuid="fc4e6a27-a02d-4829-b71f-d2d168212777">
-					<property name="com.jaspersoft.studio.unit.height" value="px"/>
-				</reportElement>
-				<textElement verticalAlignment="Middle"/>
-				<textFieldExpression><![CDATA[$P{paymentMethod}]]></textFieldExpression>
-			</textField>
-			<textField>
-				<reportElement positionType="FixRelativeToBottom" x="90" y="36" width="112" height="15" uuid="adf15c7b-c73e-4a2d-8d27-ebb1716c284c"/>
-				<textElement verticalAlignment="Middle"/>
-				<textFieldExpression><![CDATA[$P{dueDate}]]></textFieldExpression>
-			</textField>
-			<staticText>
-				<reportElement positionType="FixRelativeToBottom" x="1" y="21" width="88" height="15" uuid="50b3322e-0383-4285-ae9a-a1188a81bd1a">
-					<property name="com.jaspersoft.studio.unit.height" value="px"/>
-				</reportElement>
-				<textElement textAlignment="Left" verticalAlignment="Middle">
-					<font isBold="true"/>
-				</textElement>
-				<text><![CDATA[Payment Method:]]></text>
-			</staticText>
-			<staticText>
-				<reportElement positionType="FixRelativeToBottom" x="1" y="36" width="88" height="15" uuid="79634512-0dfd-403d-b518-7ef05c0fc0b6">
-					<property name="com.jaspersoft.studio.unit.height" value="px"/>
-				</reportElement>
-				<textElement textAlignment="Left" verticalAlignment="Middle">
-					<font isBold="true"/>
-				</textElement>
-				<text><![CDATA[Due Date:]]></text>
-			</staticText>
-		</band>
-	</lastPageFooter>
-	<summary>
-		<band height="96">
 			<componentElement>
-				<reportElement x="322" y="1" width="234" height="35" uuid="bfdd158e-4771-4e34-ad7e-dc8feca5c1d5">
+				<reportElement x="0" y="21" width="234" height="35" uuid="bfdd158e-4771-4e34-ad7e-dc8feca5c1d5">
 					<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
 					<property name="com.jaspersoft.studio.table.style.table_header" value="Table 2_TH"/>
 					<property name="com.jaspersoft.studio.table.style.column_header" value="Table 2_CH"/>
@@ -790,19 +736,13 @@
 					</jr:column>
 				</jr:table>
 			</componentElement>
-			<textField textAdjust="StretchHeight">
-				<reportElement x="0" y="0" width="281" height="19" uuid="03d5d497-37dd-4b90-9cb9-299afe0e07b0">
-					<property name="com.jaspersoft.studio.unit.y" value="px"/>
-				</reportElement>
-				<textFieldExpression><![CDATA["This bill stood on the total amount: "+$P{numberToWord}]]></textFieldExpression>
-			</textField>
 			<textField>
-				<reportElement positionType="FixRelativeToBottom" x="320" y="50" width="233" height="22" uuid="44ac09f9-c7ea-427b-8b6e-40e15b805424"/>
+				<reportElement positionType="FixRelativeToBottom" x="323" y="46" width="233" height="22" uuid="44ac09f9-c7ea-427b-8b6e-40e15b805424"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font isBold="true" isUnderline="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{saler}]]></textFieldExpression>
 			</textField>
 		</band>
-	</summary>
+	</lastPageFooter>
 </jasperReport>
